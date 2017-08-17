@@ -43,6 +43,18 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class selenium_md_puppetserver {
+	class { 'puppetserver::repository': } ->
+	class { 'puppetserver':
+	  config => {
+	    'java_args'     => {
+	      'xms'         => '1g',
+	      'xmx'         => '3g',
+	      'maxpermsize' => '512m',
+	    },
 
-
+	    'webserver'  => {
+	      'ssl-port' => '18140',
+	    },
+	  },
+	}
 }
