@@ -1,0 +1,15 @@
+{
+  "name": "eduardodicarterj-selenium_md_puppetserver",
+  "version": "0.0.1",
+  "author": "eduardodicarterj",
+  "summary": "Modulo para instalacao, configuracao e gerenciamento do Puppet Server",
+  "license": "Apache-2.0",
+  "source": "https://github.com/SeleniumWebModule/selenium_md_puppetserver.git",
+  "project_page": "https://github.com/SeleniumWebModule/selenium_md_puppetserver",
+  "issues_url": "https://github.com/SeleniumWebModule/selenium_md_puppetserver/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
